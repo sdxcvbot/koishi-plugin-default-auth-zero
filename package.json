@@ -1,0 +1,54 @@
+{
+  "name": "koishi-plugin-default-auth-zero",
+  "version": "1.0.4",
+  "description": "将初次加入/未设定权限的 OneBot(QQ) 用户权限统一设置为 0，用于 Koishi 权限基线管理。",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "koishi",
+    "koishi-plugin"
+  ],
+  "peerDependencies": {
+    "koishi": "^4"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "author": "you <you@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourname/koishi-plugin-default-auth-zero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourname/koishi-plugin-default-auth-zero/issues"
+  },
+  "homepage": "https://github.com/yourname/koishi-plugin-default-auth-zero#readme",
+  "files": [
+    "lib",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "koishi": {
+    "description": {
+      "zh": "仅将新绑定/未设权限的 OneBot(QQ) 用户设置为 authority=0；已绑定或手动授权的用户不修改。"
+    },
+    "service": {
+      "required": [
+        "database"
+      ]
+    }
+  }
+}
