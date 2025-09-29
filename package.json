@@ -20,15 +20,15 @@
     "prepublishOnly": "npm run build"
   },
   "license": "MIT",
-  "author": "you <you@example.com>",
+  "author": "sdxcvbot <zhufuzhi1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourname/koishi-plugin-default-auth-zero.git"
+    "url": "git+https://github.com/sdxcvbot/koishi-plugin-default-auth-zero.git"
   },
   "bugs": {
-    "url": "https://github.com/yourname/koishi-plugin-default-auth-zero/issues"
+    "url": "https://github.com/sdxcvbot/koishi-plugin-default-auth-zero/issues"
   },
-  "homepage": "https://github.com/yourname/koishi-plugin-default-auth-zero#readme",
+  "homepage": "https://github.com/sdxcvbot/koishi-plugin-default-auth-zero#readme",
   "files": [
     "lib",
     "src",
