@@ -1,12 +1,17 @@
 # koishi-plugin-default-auth-zero
 
-让 **Koishi 新用户的 `authority` 默认值为 0**，并兼容性地把“疑似新用户且默认成 1”的降为 0。
+一个用于 Koishi 的插件：  
+**保证新建用户的权限等级 (`authority`) 默认值为 0，而不是 Koishi 默认的 1。**
 
-## 为什么
-部分环境中新建用户会是 `authority=1`。为避免新用户初始权限过高，本插件：
-1) 通过 `ctx.model.extend('user', { authority: { initial: 0 } })` 把**默认值改为 0**；  
-2) 运行期兜底：对“刚创建/未配置的用户”若发现 `authority=1`，自动降为 `0`。
+---
 
-## 安装
+## ✨ 功能
+- 自动将新注册用户的权限等级设置为 **0**。
+- 避免用户初始时就获得不必要的权限。
+- 兼容现有数据库中已经存在 `authority=1` 的新用户记录，会自动降级为 0。
+
+---
+
+## 📦 安装
 ```bash
 npm i koishi-plugin-default-auth-zero
