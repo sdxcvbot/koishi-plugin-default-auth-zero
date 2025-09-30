@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-default-auth-zero",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "将初次加入/未设定权限的 OneBot(QQ) 用户权限统一设置为 0，用于 Koishi 权限基线管理。",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
